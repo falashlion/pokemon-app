@@ -1,0 +1,25 @@
+/* Add this CSS to your existing stylesheet or create a new one */
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+  }
+  
+  .search-input {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border-color: black;
+  }
+  
+  .search-button {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #3498db;
+    border-color: white;
+    border-radius: 10px;
+    text-decoration-color: white;
+  }
+  

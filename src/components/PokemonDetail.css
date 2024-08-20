@@ -1,0 +1,206 @@
+/* Overlay background */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .pokemon-detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .back-button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .pokemon-card {
+    display: flex;
+    align-items: center;
+    background-color: #d5f5e3;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 1500px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .pokemon-image {
+    width: 500px;
+    height: 500px;
+  }
+  
+  .pokemon-info {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 100px; /* Position the info box to overlap the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 500px);
+    height: 450px;
+  }
+  
+  .pokemon-name {
+    font-size: 2rem;
+    color: #000000;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .pokemon-details {
+    font-size: 1rem;
+    color: #040404;
+    
+  }
+  
+  .pokemon-abilities h2,
+  .pokemon-types h2,
+  .pokemon-stats h2 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  
+  /* Navigation buttons */
+  .nav-buttons {
+    margin-bottom: 20px;
+  }
+  
+  .nav-buttons button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .nav-buttons button.selected {
+    background-color: #ffffff; /* Highlighted color for the selected button */
+    color: #3498db;
+    border: 2px solid #3498db; /* Optional border to further indicate selection */
+  }
+  
+  /* Type badge styling */
+  .type-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 8px;
+    color: white;
+    background-color: #439cf6;
+    font-size: 0.95rem;
+    text-transform: capitalize;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .ability-group {
+    background-color: #3498db;
+    opacity: 10;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin-right: 5px;
+    font-size: 0.85rem;
+  }
+  
+  /* Stats progress bar */
+  .stat {
+    margin: 10px 0;
+    padding-bottom: 5px;
+  }
+  
+  .progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    height: 10px;
+  }
+  
+  .progress-bar-fill {
+    background-color: #f39c12;
+    height: 100%;
+  }
+  
+  .weight{
+    margin-top: 40px;
+    text-align: right;
+    font-weight: bolder;
+    margin-right: 40px;
+  }
+
+  .height{
+    margin-top: -20px;
+    text-align: left;
+    font-weight: bolder;
+  }
+
+  /* Big Spinner */
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.big-spinner {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+/* Small Spinner */
+.small-spinner {
+  border: 8px solid #f3f3f3; 
+  border-top: 8px solid #3498db; 
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.pokemon-moves {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.move-group {
+  display: inline-block;
+  background-color: #ffcb05;
+  color: #000;
+  padding: 5px 5px;
+  border-radius: 5px;
+  margin: 3px;
+  font-size: 0.75rem;
+}

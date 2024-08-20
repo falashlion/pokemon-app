@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f9;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://wallpapercave.com/wp/wp13150855.jpg') no-repeat fixed  ;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 50px;
+}
+
+.card {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background-color: white;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1rem;
+}
+
+.card h2 {
+    font-size: 1.75rem; 
+    color: #2c3e50; 
+    margin-bottom: 0.75rem; 
+    text-decoration: none; 
+    font-weight: bold; 
+    text-align: center; 
+    letter-spacing: 1px; 
+}
+
+
+.card .abilities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.abilities .group {
+    background-color: #ff6347;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+    border-radius: 8px;
+    margin: 0.5rem;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.btn-group button {
+    outline: none;
+    border: none;
+    width: 150px;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #4682b4;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-group button:hover {
+    background-color: #5a9bd5;
+}
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+}
